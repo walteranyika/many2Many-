@@ -30,8 +30,8 @@ Route::get('/subjects/{id}', function ($id) {
 
     //return $user->subjects;
 
-//    $data = Student::with('subjects')->find($id);
-//    return $data;
+   $data = Student::with('subjects')->find($id);
+   return $data;
 
   //  return Student::whereIn('id',[1,2])->get();
 });
